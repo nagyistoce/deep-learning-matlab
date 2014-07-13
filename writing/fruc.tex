@@ -43,15 +43,35 @@
 
 \section{The model}
 
+\subsection{High-order Boltzmann Machine}
+
 \begin{figure}
   \centering
   \includegraphics[width=3in]{4GRBM}\\
-  \caption{Graphical representation of a 4-way Boltzmann machine}\label{4GRBM}
+  \caption{Graphical representation of a 4-way gated Boltzmann machine}\label{4GRBM}
 \end{figure}
-sdfdsf
 
+A \textit{4-way gated Boltzmann machine} consists of $L$ hidden units $H = (H_1, ..., H_L)$ to capture dependencies between three layers of observed variable with units $X = (X_1, ..., X_I)$, $Y = (Y_1, ..., Y_J)$ and $Z = (Z_1, ..., Z_K)$. 
+The energy function of the model is defined as:
+\begin{equation}
+\begin{split}
+E(x,y,z,h;\theta) = &-\sum_f{\bigg(\sum_i{x_i w_{if}^x}\bigg) \bigg(\sum_j{y_i w_{jf}^y}\bigg) \bigg(\sum_k{z_k w_{kf}^z}\bigg) \bigg(\sum_l{h_l w_{lf}^h}\bigg)} 
+\\
+&- \sum_i{w_{i}^x x_i} - \sum_j{w_{j}^y y_i} - \sum_k{w_{k}^z z_k} - \sum_l{w_{l}^h h_l}
+\end{split}
+\end{equation}
 
-\subsection{High-order Boltzmann Machine}
+where $\boldsymbol{\theta} = \{\boldsymbol{W^x}, \boldsymbol{W^y}, \boldsymbol{W^z}, \boldsymbol{W^h}\}$ are the parameters of the model and each factor $f$ corresponds to a quadruplet of linear filters.
+
+The joint probability distribution under the model is given by the Gibbs distribution:
+\begin{equation}
+p(x,y,z,h;\theta) = \frac{1}{Z(\theta)}e^{-E(x,y,z,h;\theta)} 
+\end{equation}
+where the \textit{partition} function $Z(\theta)$ is defined as:
+\begin{equation}
+Z(\theta) = \sum_{x,y,z,h}{e^{-E(x,y,z,h;\theta)}}
+\end{equation}
+
 
 \subsection{Learning}
 

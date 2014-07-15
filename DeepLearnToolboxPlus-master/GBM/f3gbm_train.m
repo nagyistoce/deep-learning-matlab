@@ -40,12 +40,12 @@ end
         % zero mask used here
         gbm.inc(gbm.zeromask) = 0;
         
-        fprintf('norm of inc: %f\n',norm(gbm.inc));
+        fprintf('epoch %d ## norm of inc: %f\n', epoch ,norm(gbm.inc));
         
         % stablize the things...
         if norm(gbm.inc) > gbm.incMax
             gbm.inc = gbm.inc/ninc * gbm.incMax;
-            fprintf('norm of inc again: %f\n',norm(gbm.inc));
+            fprintf('epoch %d ## norm of inc again: %f\n', epoch ,norm(gbm.inc));
         end
         
         assert(all(~isnan(gbm.inc)));
@@ -109,8 +109,8 @@ end
         
         
         if gbm.verbose % output recon and norm
-            fprintf('mean square error: %f\n', sum( (Y(:)-batch_y(:)).^2) / gbm.batchsize   );
-            fprintf('mean norm of w: %f\n', norm([gbm.wxf(:); gbm.wyf(:); gbm.whf(:); gbm.wh(:); gbm.wy(:)]));
+            fprintf('epoch %d ## mean square error: %f\n', epoch , sum( (Y(:)-batch_y(:)).^2) / gbm.batchsize   );
+            fprintf('epoch %d ## mean norm of w: %f\n', epoch , norm([gbm.wxf(:); gbm.wyf(:); gbm.whf(:); gbm.wh(:); gbm.wy(:)]));
         end
              
         
@@ -118,6 +118,7 @@ end
         save positiveGrad positiveGrad
         save negativeGrad negativeGrad
         %%
+        
         grad = -positiveGrad + negativeGrad;
         
         weightcostgrad_x = gbm.weightPenaltyL2 * gbm.wxf(:);

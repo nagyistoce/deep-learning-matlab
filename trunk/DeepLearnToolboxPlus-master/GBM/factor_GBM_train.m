@@ -194,6 +194,10 @@ end
         
         negativeGrad = factor_GBM_energy_grad(factor_GBM_negdata());
         
+        %%
+        save positiveGrad positiveGrad
+        save negativeGrad negativeGrad
+        %%
         grad = -positiveGrad + negativeGrad;
         grad = grad + sparsityGrad;
         

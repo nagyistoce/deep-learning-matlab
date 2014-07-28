@@ -4,7 +4,6 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Three components of VeLoc. Inertial data is used to compute the smartphone's pose in the vehicle, then it is further processed to detect certain landmarks during driving, and the augmented particle filter harnesses constraints from landmark detection and the floor map for vehicle localization.}}{1}}
 \newlabel{pix:overview}{{1}{1}}
-\citation{Wang:2013_Driver_Phone_Use}
 \newlabel{fig_apf_intuition1}{{2(a)}{2}}
 \newlabel{sub@fig_apf_intuition1}{{(a)}{2}}
 \newlabel{fig_apf_intuition2}{{2(b)}{2}}
@@ -16,128 +15,65 @@
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Localization using detected landmarks.}}}{2}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Localization using both map constraints and detected landmarks.}}}{2}}
 \newlabel{fig_poster}{{2}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Pose Estimation}{2}}
-\newlabel{sec:pose}{{2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Coordinate systems of a vehicle ($x,y,z$) and a smartphone ($x',y',z'$).}}{2}}
-\newlabel{pix:coordinates}{{3}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Z-axis Estimation}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Moving Detection}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Y-axis Direction Estimation}{2}}
-\newlabel{subsec:pose_undirected}{{2.3}{2}}
-\citation{Eriksson:The_Pothole_Patrol}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Distribution of normalized standard deviation during static and moving states. }}{3}}
-\newlabel{pix:move}{{4}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Forward Direction Estimation}{3}}
-\newlabel{subsec:pose_directed}{{2.4}{3}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Landmark Detection}{3}}
-\newlabel{sec:landmark}{{3}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Bump Detection}{3}}
-\citation{Robertson:Foot-mounted_Inertial,Woodman:Pedestrian_Localisation:Foot-mounted}
-\citation{Woodman:Pedestrian_Localisation:Foot-mounted}
-\newlabel{detect_1}{{5(a)}{4}}
-\newlabel{sub@detect_1}{{(a)}{4}}
-\newlabel{detect_2}{{5(b)}{4}}
-\newlabel{sub@detect_2}{{(b)}{4}}
-\newlabel{detect_3}{{5(c)}{4}}
-\newlabel{sub@detect_3}{{(c)}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Bump detections: (a) four jitters (circled ones in the figure) in the acceleration on the z-axis; (b) four high peaks in the standard deviation of the z-axis acceleration; (c) four distinguishable peaks after applying convolution to the standard deviation with a Gaussian filter, where green (or red) markers indicate the local maximums for detected bumps (or false alarms).}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Acceleration along the z-axis with four jitters.}}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Standard deviation with four high peaks}}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Convoluted standard deviation with four distinguishable peaks}}}{4}}
-\newlabel{fig_bump}{{5}{4}}
-\newlabel{left_turn}{{6(a)}{4}}
-\newlabel{sub@left_turn}{{(a)}{4}}
-\newlabel{right_turn}{{6(b)}{4}}
-\newlabel{sub@right_turn}{{(b)}{4}}
-\newlabel{up_turn}{{6(c)}{4}}
-\newlabel{sub@up_turn}{{(c)}{4}}
-\newlabel{down_turn}{{6(d)}{4}}
-\newlabel{sub@down_turn}{{(d)}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Inertial sensing data used for turn and slope detection. (a)(b) show turns using gyroscope signal along the z-axis. (c)(d) show slopes using gyroscope signal along the x-axis.}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Left turn}}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Right turn}}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Up slope}}}{4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Down slope }}}{4}}
-\newlabel{fig_turn_slope}{{6}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Turn and Slope detection}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Realtime Tracking}{4}}
-\newlabel{sec:tracking}{{4}{4}}
-\citation{Robertson:Foot-mounted_Inertial,Woodman:Pedestrian_Localisation:Foot-mounted}
-\citation{Rai:Zee}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Intuition and Probabilistic Framework}{5}}
-\newlabel{subsec:APF_intuition}{{4.1}{5}}
-\newlabel{fig_apf_intuition1}{{7(a)}{5}}
-\newlabel{sub@fig_apf_intuition1}{{(a)}{5}}
-\newlabel{fig_apf_intuition2}{{7(b)}{5}}
-\newlabel{sub@fig_apf_intuition2}{{(b)}{5}}
-\newlabel{fig_apf_intuition3}{{7(c)}{5}}
-\newlabel{sub@fig_apf_intuition3}{{(c)}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Intuition of localization. (a) shows that trajectories can be used for localization since only a few paths on the map could accommodate the trajectory. (b) shows that once a landmark is detected, only a few positions marked with the same kind of landmark are possible. (c) shows that using both map constraints and detected landmark could narrow down the uncertainty more quickly.}}{5}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Localization using constraints imposed by the map.}}}{5}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Localization using detected landmarks.}}}{5}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Localization using both map constraints and detected landmarks.}}}{5}}
-\newlabel{fig_apf}{{7}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Augmented Particle Filter}{5}}
-\newlabel{subsec:APF_details}{{4.2}{5}}
-\citation{probabilistic}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Vehicle State Estimation}{6}}
-\newlabel{subsec:APF_effect}{{4.3}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Map of the example scenario shown with an actual route denoted by 7 key points and the times when the vehicle passes them. The vehicle starts at A and stops at G. }}{6}}
-\newlabel{fig_route}{{8}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Particles over time with initial position and heading direction of the vehicle.}}{7}}
-\newlabel{fig_case1}{{9}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Particles over time with only the initial heading of the vehicle.}}{7}}
-\newlabel{fig_case2}{{10}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Performance Evaluation}{7}}
-\newlabel{sec:evaluation}{{5}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Methodology}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Floor map of three underground parking lots: (a) parking lot 1: $250m\times 90m$ with 298 parking spots, 19 bumps and 10 turns. (b) parking lot 2: $80m\times 90m$ with 68 parking spots, 7 bumps and 14 turns. (c) parking lot 3: $180m\times 50m$ with 79 parking spots, 12 bumps and 11 turns. }}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{8}}
-\newlabel{floorplan}{{12}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Particles over time with neither the initial position or initial heading direction of the vehicle.}}{8}}
-\newlabel{fig_case3}{{11}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation of Pose Estimation}{8}}
-\newlabel{pose}{{14(a)}{9}}
-\newlabel{sub@pose}{{(a)}{9}}
-\newlabel{style}{{14(b)}{9}}
-\newlabel{sub@style}{{(b)}{9}}
-\newlabel{place}{{14(c)}{9}}
-\newlabel{sub@place}{{(c)}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Pose estimation error in different scenarios: (a) 4 different poses. (b) 3 different vehicles and drivers in one parking lot. (c) 3 different parking lots.}}{9}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{9}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{9}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Mould is with 4 iPhones. }}{9}}
-\newlabel{pix:mould}{{13}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Evaluation of Landmark Detection}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces The distribution of estimated probability of the backward direction.}}{9}}
-\newlabel{pix:direction_err}{{15}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Performance Evaluation}{2}}
+\newlabel{sec:evaluation}{{2}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Methodology}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Mould is with 4 iPhones. }}{2}}
+\newlabel{pix:mould}{{4}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Evaluation of Pose Estimation}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Floor map of three underground parking lots: (a) parking lot 1: $250m\times 90m$ with 298 parking spots, 19 bumps and 10 turns. (b) parking lot 2: $80m\times 90m$ with 68 parking spots, 7 bumps and 14 turns. (c) parking lot 3: $180m\times 50m$ with 79 parking spots, 12 bumps and 11 turns. }}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{3}}
+\newlabel{floorplan}{{3}{3}}
+\newlabel{pose}{{5(a)}{3}}
+\newlabel{sub@pose}{{(a)}{3}}
+\newlabel{style}{{5(b)}{3}}
+\newlabel{sub@style}{{(b)}{3}}
+\newlabel{place}{{5(c)}{3}}
+\newlabel{sub@place}{{(c)}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pose estimation error in different scenarios: (a) 4 different poses. (b) 3 different vehicles and drivers in one parking lot. (c) 3 different parking lots.}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Evaluation of Landmark Detection}{3}}
 \citation{Wang:2013_Driver_Phone_Use}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The distribution of estimated probability of the backward direction.}}{4}}
+\newlabel{pix:direction_err}{{6}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Orientation error of pose estimation for different time windows.}}{4}}
+\newlabel{pix:time_pose}{{7}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Landmark detection performance for different landmarks}}{4}}
+\newlabel{tab:landmark_precision}{{1}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Performance of landmark detection with different poses}}{4}}
+\newlabel{tab:pose_precision}{{2}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Performance of landmark detection with different drivers}}{4}}
+\newlabel{tab:style_precision}{{3}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Performance of landmark detection with different garages}}{4}}
+\newlabel{tab:place_precision}{{4}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Evaluation of tracking}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Related Work}{4}}
+\newlabel{sec:background}{{3}{4}}
 \citation{Choudhury:SurroundSense,Acoustic_Background_Spectrum}
 \citation{Wang:UnLoc}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Orientation error of pose estimation for different time windows.}}{10}}
-\newlabel{pix:time_pose}{{16}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Evaluation of tracking}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Landmark detection performance for different landmarks}}{10}}
-\newlabel{tab:landmark_precision}{{1}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Performance of landmark detection with different poses}}{10}}
-\newlabel{tab:pose_precision}{{2}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Performance of landmark detection with different drivers}}{10}}
-\newlabel{tab:style_precision}{{3}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Performance of landmark detection with different garages}}{10}}
-\newlabel{tab:place_precision}{{4}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Performance of different particle numbers. }}{10}}
-\newlabel{pix:particle_number}{{18}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Related Work}{10}}
-\newlabel{sec:background}{{6}{10}}
 \citation{FastSLAM}
 \citation{WiFi-SLAM}
 \citation{probabilistic}
 \citation{MCL,MCLrobust}
 \citation{probabilistic}
 \citation{Constandache:Did_You_See_Bob}
+\newlabel{err_pose}{{8(a)}{5}}
+\newlabel{sub@err_pose}{{(a)}{5}}
+\newlabel{err_style}{{8(b)}{5}}
+\newlabel{sub@err_style}{{(b)}{5}}
+\newlabel{err_place}{{8(c)}{5}}
+\newlabel{sub@err_place}{{(c)}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Vehicle localization errors in different scenarios: (a) 4 different poses. (b) 3 different cars and drivers in one parking lot. (c) 3 different parking lots. }}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{5}}
+\newlabel{locerr}{{8}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Performance of different particle numbers. }}{5}}
+\newlabel{pix:particle_number}{{9}{5}}
 \citation{Robertson:Foot-mounted_Inertial,Woodman:Pedestrian_Localisation:Foot-mounted}
 \citation{Choudhury:CompAcc}
 \citation{Wang:UnLoc}
@@ -151,17 +87,6 @@
 \citation{WreckWatch}
 \citation{Virtual_Trip_Lines,VTrack}
 \citation{Vehicular_Speed,signal_profile}
-\newlabel{err_pose}{{17(a)}{11}}
-\newlabel{sub@err_pose}{{(a)}{11}}
-\newlabel{err_style}{{17(b)}{11}}
-\newlabel{sub@err_style}{{(b)}{11}}
-\newlabel{err_place}{{17(c)}{11}}
-\newlabel{sub@err_place}{{(c)}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Vehicle localization errors in different scenarios: (a) 4 different poses. (b) 3 different cars and drivers in one parking lot. (c) 3 different parking lots. }}{11}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{11}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{11}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{11}}
-\newlabel{locerr}{{17}{11}}
 \bibstyle{abbrv}
 \bibdata{bib/sigproc}
 \bibcite{Choudhury:SurroundSense}{1}
@@ -170,6 +95,11 @@
 \bibcite{Constandache:Did_You_See_Bob}{4}
 \bibcite{Choudhury:CompAcc}{5}
 \bibcite{Eriksson:The_Pothole_Patrol}{6}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{6}}
+\newlabel{sec:discussion}{{4}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion and Future Work}{6}}
+\newlabel{sec:conclusion}{{5}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}References}{6}}
 \bibcite{WiFi-SLAM}{7}
 \bibcite{MCL}{8}
 \bibcite{Virtual_Trip_Lines}{9}
@@ -179,11 +109,6 @@
 \bibcite{ParkSense}{13}
 \bibcite{Rai:Zee}{14}
 \bibcite{Robertson:Foot-mounted_Inertial}{15}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{12}}
-\newlabel{sec:discussion}{{7}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion and Future Work}{12}}
-\newlabel{sec:conclusion}{{8}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {9}References}{12}}
 \bibcite{Acoustic_Background_Spectrum}{16}
 \bibcite{VTrack}{17}
 \bibcite{probabilistic}{18}

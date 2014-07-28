@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.19)  28 JUL 2014 19:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.19)  28 JUL 2014 19:49
 entering extended mode
 **D:/just*do*IT/projects/deep-learning-matlab/poster/sensys.tex
 ("D:/just do IT/projects/deep-learning-matlab/poster/sensys.tex"
@@ -330,26 +330,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks41
 
 (E:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
-("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux"
-
-LaTeX Warning: Label `fig_apf_intuition1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig_apf_intuition1' multiply defined.
-
-
-LaTeX Warning: Label `fig_apf_intuition2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig_apf_intuition2' multiply defined.
-
-
-LaTeX Warning: Label `fig_apf_intuition3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig_apf_intuition3' multiply defined.
-
-)
+("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
@@ -359,7 +340,8 @@ LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 62.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 62
 .
- (E:\CTEX\MiKTeX\tex\latex\psnfss\omspzccm.fd
+
+(E:\CTEX\MiKTeX\tex\latex\psnfss\omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 62.
@@ -529,430 +511,26 @@ Overfull \hbox (16.9246pt too wide) in paragraph at lines 86--101
  [] 
  []
 
-) ("D:\just do IT\projects\deep-learning-matlab\poster\pose.tex"
-<pictures/coordinates.png, id=30, 2794.44pt x 991.45406pt>
-File: pictures/coordinates.png Graphic file (type png)
-
-<use pictures/coordinates.png>
-Package pdftex.def Info: pictures/coordinates.png used on input line 9.
-(pdftex.def)             Requested size: 252.94499pt x 89.74138pt.
-
-Overfull \hbox (11.9246pt too wide) in paragraph at lines 9--9
- [][] 
- []
-
-<pictures/move.pdf, id=31, 556.45581pt x 419.05959pt>
-File: pictures/move.pdf Graphic file (type pdf)
- <use pictures/move.pdf>
-Package pdftex.def Info: pictures/move.pdf used on input line 29.
-(pdftex.def)             Requested size: 177.06458pt x 133.34088pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/apf1.pdf> <D:/j
-ust do IT/projects/deep-learning-matlab/poster/pictures/apf2.pdf> <D:/just do I
-T/projects/deep-learning-matlab/poster/pictures/apf3.pdf> <D:/just do IT/projec
-ts/deep-learning-matlab/poster/pictures/coordinates.png>])
-("D:\just do IT\projects\deep-learning-matlab\poster\landmark.tex"
-<pictures/detect_1.pdf, id=182, 511.9125pt x 206.27063pt>
-File: pictures/detect_1.pdf Graphic file (type pdf)
-
-<use pictures/detect_1.pdf>
-Package pdftex.def Info: pictures/detect_1.pdf used on input line 28.
-(pdftex.def)             Requested size: 204.76137pt x 82.50677pt.
-
-<pictures/detect_2.pdf, id=183, 502.87875pt x 184.43906pt>
-File: pictures/detect_2.pdf Graphic file (type pdf)
-
-<use pictures/detect_2.pdf>
-Package pdftex.def Info: pictures/detect_2.pdf used on input line 31.
-(pdftex.def)             Requested size: 201.14793pt x 73.7743pt.
-
-<pictures/detect_3.pdf, id=184, 511.9125pt x 185.94469pt>
-File: pictures/detect_3.pdf Graphic file (type pdf)
-
-<use pictures/detect_3.pdf>
-Package pdftex.def Info: pictures/detect_3.pdf used on input line 34.
-(pdftex.def)             Requested size: 204.76137pt x 74.37654pt.
- [3 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/move.pdf>]
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 80.
-
-<pictures/left_turn.pdf, id=195, 571.3054pt x 433.62pt>
-File: pictures/left_turn.pdf Graphic file (type pdf)
-
-<use pictures/left_turn.pdf>
-Package pdftex.def Info: pictures/left_turn.pdf used on input line 94.
-(pdftex.def)             Requested size: 112.0187pt x 85.02202pt.
-
-<pictures/right_turn.pdf, id=196, 571.3054pt x 433.62pt>
-File: pictures/right_turn.pdf Graphic file (type pdf)
-
-<use pictures/right_turn.pdf>
-Package pdftex.def Info: pictures/right_turn.pdf used on input line 97.
-(pdftex.def)             Requested size: 112.0187pt x 85.02202pt.
-
-<pictures/up_turn.pdf, id=197, 562.51414pt x 433.62pt>
-File: pictures/up_turn.pdf Graphic file (type pdf)
-
-<use pictures/up_turn.pdf>
-Package pdftex.def Info: pictures/up_turn.pdf used on input line 100.
-(pdftex.def)             Requested size: 112.0187pt x 86.34532pt.
-
-<pictures/down_turn.pdf, id=198, 562.51414pt x 433.62pt>
-File: pictures/down_turn.pdf Graphic file (type pdf)
-
-<use pictures/down_turn.pdf>
-Package pdftex.def Info: pictures/down_turn.pdf used on input line 103.
-(pdftex.def)             Requested size: 112.0187pt x 86.34532pt.
-)
-("D:\just do IT\projects\deep-learning-matlab\poster\rt_tracking.tex" [4 <D:/ju
-st do IT/projects/deep-learning-matlab/poster/pictures/detect_1.pdf> <D:/just d
-o IT/projects/deep-learning-matlab/poster/pictures/detect_2.pdf> <D:/just do IT
-/projects/deep-learning-matlab/poster/pictures/detect_3.pdf> <D:/just do IT/pro
-jects/deep-learning-matlab/poster/pictures/left_turn.pdf> <D:/just do IT/projec
-ts/deep-learning-matlab/poster/pictures/right_turn.pdf> <D:/just do IT/projects
-/deep-learning-matlab/poster/pictures/up_turn.pdf> <D:/just do IT/projects/deep
--learning-matlab/poster/pictures/down_turn.pdf>]
-Missing character: There is no ¡ in font ptmr7t!
-Missing character: There is no ¯ in font ptmr7t!
-File: pictures/apf1.pdf Graphic file (type pdf)
- <use pictures/apf1.pdf>
-Package pdftex.def Info: pictures/apf1.pdf used on input line 36.
-(pdftex.def)             Requested size: 227.64894pt x 106.45413pt.
-File: pictures/apf2.pdf Graphic file (type pdf)
-
-<use pictures/apf2.pdf>
-Package pdftex.def Info: pictures/apf2.pdf used on input line 42.
-(pdftex.def)             Requested size: 227.64894pt x 98.355pt.
-File: pictures/apf3.pdf Graphic file (type pdf)
- <use pictures/apf3.pdf>
-Package pdftex.def Info: pictures/apf3.pdf used on input line 48.
-(pdftex.def)             Requested size: 227.64894pt x 85.68724pt.
-
-Overfull \hbox (16.9246pt too wide) in paragraph at lines 36--50
- [][] 
- []
-
-
-Overfull \hbox (16.9246pt too wide) in paragraph at lines 36--50
- [] 
- []
-
-
-Overfull \hbox (16.9246pt too wide) in paragraph at lines 36--50
- [] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5] <pictures/route.png, id=271, 532.23843pt x 531.48563pt>
-File: pictures/route.png Graphic file (type png)
-
-<use pictures/route.png>
-Package pdftex.def Info: pictures/route.png used on input line 123.
-(pdftex.def)             Requested size: 159.67276pt x 159.44691pt.
-
-<pictures/fig1-1.png, id=272, 319.94531pt x 316.18124pt>
-File: pictures/fig1-1.png Graphic file (type png)
-
-<use pictures/fig1-1.png>
-Package pdftex.def Info: pictures/fig1-1.png used on input line 135.
-(pdftex.def)             Requested size: 95.98433pt x 94.8551pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-2.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-2.pdf, id=273, 268.69002pt x 276.30678pt>
-File: pictures/fig1-2.pdf Graphic file (type pdf)
-
-<use pictures/fig1-2.pdf>
-Package pdftex.def Info: pictures/fig1-2.pdf used on input line 139.
-(pdftex.def)             Requested size: 80.60762pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-3.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-3.pdf, id=274, 268.69002pt x 276.30678pt>
-File: pictures/fig1-3.pdf Graphic file (type pdf)
-
-<use pictures/fig1-3.pdf>
-Package pdftex.def Info: pictures/fig1-3.pdf used on input line 143.
-(pdftex.def)             Requested size: 80.60762pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-4.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-4.pdf, id=275, 270.19563pt x 276.30678pt>
-File: pictures/fig1-4.pdf Graphic file (type pdf)
-
-<use pictures/fig1-4.pdf>
-Package pdftex.def Info: pictures/fig1-4.pdf used on input line 148.
-(pdftex.def)             Requested size: 81.05931pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-5.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-5.pdf, id=276, 270.19563pt x 276.30678pt>
-File: pictures/fig1-5.pdf Graphic file (type pdf)
-
-<use pictures/fig1-5.pdf>
-Package pdftex.def Info: pictures/fig1-5.pdf used on input line 152.
-(pdftex.def)             Requested size: 81.05931pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-6.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-6.pdf, id=277, 270.19563pt x 276.30678pt>
-File: pictures/fig1-6.pdf Graphic file (type pdf)
-
-<use pictures/fig1-6.pdf>
-Package pdftex.def Info: pictures/fig1-6.pdf used on input line 156.
-(pdftex.def)             Requested size: 81.05931pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-7.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-7.pdf, id=278, 271.70126pt x 276.30678pt>
-File: pictures/fig1-7.pdf Graphic file (type pdf)
-
-<use pictures/fig1-7.pdf>
-Package pdftex.def Info: pictures/fig1-7.pdf used on input line 161.
-(pdftex.def)             Requested size: 81.511pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-8.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-8.pdf, id=279, 269.44283pt x 276.30678pt>
-File: pictures/fig1-8.pdf Graphic file (type pdf)
-
-<use pictures/fig1-8.pdf>
-Package pdftex.def Info: pictures/fig1-8.pdf used on input line 165.
-(pdftex.def)             Requested size: 80.83347pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-9.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig1-9.pdf, id=280, 271.70126pt x 276.30678pt>
-File: pictures/fig1-9.pdf Graphic file (type pdf)
-
-<use pictures/fig1-9.pdf>
-Package pdftex.def Info: pictures/fig1-9.pdf used on input line 169.
-(pdftex.def)             Requested size: 81.511pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-10.pdf): PDF inclusion: found PDF version <1.6>, but at mo
-st version <1.5> allowed
-<pictures/fig1-10.pdf, id=281, 271.70126pt x 276.30678pt>
-File: pictures/fig1-10.pdf Graphic file (type pdf)
-
-<use pictures/fig1-10.pdf>
-Package pdftex.def Info: pictures/fig1-10.pdf used on input line 174.
-(pdftex.def)             Requested size: 81.511pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-11.pdf): PDF inclusion: found PDF version <1.6>, but at mo
-st version <1.5> allowed
-<pictures/fig1-11.pdf, id=282, 270.19563pt x 276.30678pt>
-File: pictures/fig1-11.pdf Graphic file (type pdf)
-
-<use pictures/fig1-11.pdf>
-Package pdftex.def Info: pictures/fig1-11.pdf used on input line 178.
-(pdftex.def)             Requested size: 81.05931pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig1-12.pdf): PDF inclusion: found PDF version <1.6>, but at mo
-st version <1.5> allowed
-<pictures/fig1-12.pdf, id=283, 270.19563pt x 276.30678pt>
-File: pictures/fig1-12.pdf Graphic file (type pdf)
-
-<use pictures/fig1-12.pdf>
-Package pdftex.def Info: pictures/fig1-12.pdf used on input line 182.
-(pdftex.def)             Requested size: 81.05931pt x 82.89267pt.
- [6 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/route.png>]
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig2-1.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig2-1.pdf, id=287, 272.45407pt x 276.30678pt>
-File: pictures/fig2-1.pdf Graphic file (type pdf)
-
-<use pictures/fig2-1.pdf>
-Package pdftex.def Info: pictures/fig2-1.pdf used on input line 198.
-(pdftex.def)             Requested size: 81.73683pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig2-2.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig2-2.pdf, id=288, 272.45407pt x 276.30678pt>
-File: pictures/fig2-2.pdf Graphic file (type pdf)
-
-<use pictures/fig2-2.pdf>
-Package pdftex.def Info: pictures/fig2-2.pdf used on input line 202.
-(pdftex.def)             Requested size: 81.73683pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig2-3.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig2-3.pdf, id=289, 272.45407pt x 276.30678pt>
-File: pictures/fig2-3.pdf Graphic file (type pdf)
-
-<use pictures/fig2-3.pdf>
-Package pdftex.def Info: pictures/fig2-3.pdf used on input line 206.
-(pdftex.def)             Requested size: 81.73683pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig2-4.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig2-4.pdf, id=290, 272.45407pt x 276.30678pt>
-File: pictures/fig2-4.pdf Graphic file (type pdf)
-
-<use pictures/fig2-4.pdf>
-Package pdftex.def Info: pictures/fig2-4.pdf used on input line 211.
-(pdftex.def)             Requested size: 81.73683pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig2-5.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig2-5.pdf, id=291, 272.45407pt x 276.30678pt>
-File: pictures/fig2-5.pdf Graphic file (type pdf)
-
-<use pictures/fig2-5.pdf>
-Package pdftex.def Info: pictures/fig2-5.pdf used on input line 215.
-(pdftex.def)             Requested size: 81.73683pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig2-6.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig2-6.pdf, id=292, 272.45407pt x 276.30678pt>
-File: pictures/fig2-6.pdf Graphic file (type pdf)
-
-<use pictures/fig2-6.pdf>
-Package pdftex.def Info: pictures/fig2-6.pdf used on input line 219.
-(pdftex.def)             Requested size: 81.73683pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig3-1.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig3-1.pdf, id=293, 269.44283pt x 276.30678pt>
-File: pictures/fig3-1.pdf Graphic file (type pdf)
-
-<use pictures/fig3-1.pdf>
-Package pdftex.def Info: pictures/fig3-1.pdf used on input line 234.
-(pdftex.def)             Requested size: 80.83347pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig3-2.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig3-2.pdf, id=294, 269.44283pt x 276.30678pt>
-File: pictures/fig3-2.pdf Graphic file (type pdf)
-
-<use pictures/fig3-2.pdf>
-Package pdftex.def Info: pictures/fig3-2.pdf used on input line 238.
-(pdftex.def)             Requested size: 80.83347pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig3-3.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig3-3.pdf, id=295, 269.44283pt x 276.30678pt>
-File: pictures/fig3-3.pdf Graphic file (type pdf)
-
-<use pictures/fig3-3.pdf>
-Package pdftex.def Info: pictures/fig3-3.pdf used on input line 242.
-(pdftex.def)             Requested size: 80.83347pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig3-4.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig3-4.pdf, id=296, 268.69002pt x 276.30678pt>
-File: pictures/fig3-4.pdf Graphic file (type pdf)
-
-<use pictures/fig3-4.pdf>
-Package pdftex.def Info: pictures/fig3-4.pdf used on input line 247.
-(pdftex.def)             Requested size: 80.60762pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig3-5.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig3-5.pdf, id=297, 269.44283pt x 276.30678pt>
-File: pictures/fig3-5.pdf Graphic file (type pdf)
-
-<use pictures/fig3-5.pdf>
-Package pdftex.def Info: pictures/fig3-5.pdf used on input line 251.
-(pdftex.def)             Requested size: 80.83347pt x 82.89267pt.
-
-
-pdfTeX warning: pdflatex.exe (file D:/just do IT/projects/deep-learning-matlab/
-poster/pictures/fig3-6.pdf): PDF inclusion: found PDF version <1.6>, but at mos
-t version <1.5> allowed
-<pictures/fig3-6.pdf, id=298, 271.70126pt x 276.30678pt>
-File: pictures/fig3-6.pdf Graphic file (type pdf)
-
-<use pictures/fig3-6.pdf>
-Package pdftex.def Info: pictures/fig3-6.pdf used on input line 255.
-(pdftex.def)             Requested size: 81.511pt x 82.89267pt.
-)
-("D:\just do IT\projects\deep-learning-matlab\poster\evaluation.tex"
-<pictures/map1.png, id=299, 1882.03125pt x 647.41875pt>
+) ("D:\just do IT\projects\deep-learning-matlab\poster\evaluation.tex"
+<pictures/map1.png, id=30, 1882.03125pt x 647.41875pt>
 File: pictures/map1.png Graphic file (type png)
-
-<use pictures/map1.png>
+ <use pictures/map1.png>
 Package pdftex.def Info: pictures/map1.png used on input line 10.
 (pdftex.def)             Requested size: 301.13115pt x 103.58911pt.
- <pictures/map3.png, id=301, 602.25pt x 639.89063pt>
-File: pictures/map3.png Graphic file (type png)
 
-<use pictures/map3.png>
+<pictures/map3.png, id=32, 602.25pt x 639.89063pt>
+File: pictures/map3.png Graphic file (type png)
+ <use pictures/map3.png>
 Package pdftex.def Info: pictures/map3.png used on input line 14.
 (pdftex.def)             Requested size: 96.36195pt x 102.38458pt.
 
-<pictures/map4.png, id=302, 1363.34344pt x 630.85687pt>
+<pictures/map4.png, id=33, 1363.34344pt x 630.85687pt>
 File: pictures/map4.png Graphic file (type png)
-
-<use pictures/map4.png>
+ <use pictures/map4.png>
 Package pdftex.def Info: pictures/map4.png used on input line 17.
 (pdftex.def)             Requested size: 218.1394pt x 100.93916pt.
- [7 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/fig1-1.png (PN
-G copy)> <D:/just do IT/projects/deep-learning-matlab/poster/pictures/fig1-2.pd
-f> <D:/just do IT/projects/deep-learning-matlab/poster/pictures/fig1-3.pdf> <D:
-/just do IT/projects/deep-learning-matlab/poster/pictures/fig1-4.pdf> <D:/just 
-do IT/projects/deep-learning-matlab/poster/pictures/fig1-5.pdf> <D:/just do IT/
-projects/deep-learning-matlab/poster/pictures/fig1-6.pdf> <D:/just do IT/projec
-ts/deep-learning-matlab/poster/pictures/fig1-7.pdf> <D:/just do IT/projects/dee
-p-learning-matlab/poster/pictures/fig1-8.pdf> <D:/just do IT/projects/deep-lear
-ning-matlab/poster/pictures/fig1-9.pdf> <D:/just do IT/projects/deep-learning-m
-atlab/poster/pictures/fig1-10.pdf> <D:/just do IT/projects/deep-learning-matlab
-/poster/pictures/fig1-11.pdf> <D:/just do IT/projects/deep-learning-matlab/post
-er/pictures/fig1-12.pdf> <D:/just do IT/projects/deep-learning-matlab/poster/pi
-ctures/fig2-1.pdf> <D:/just do IT/projects/deep-learning-matlab/poster/pictures
-/fig2-2.pdf> <D:/just do IT/projects/deep-learning-matlab/poster/pictures/fig2-
-3.pdf> <D:/just do IT/projects/deep-learning-matlab/poster/pictures/fig2-4.pdf>
- <D:/just do IT/projects/deep-learning-matlab/poster/pictures/fig2-5.pdf> <D:/j
-ust do IT/projects/deep-learning-matlab/poster/pictures/fig2-6.pdf>] <pictures/
-mould.pdf, id=342, 3057.92438pt x 2318.6625pt>
+
+<pictures/mould.pdf, id=34, 3057.92438pt x 2318.6625pt>
 File: pictures/mould.pdf Graphic file (type pdf)
 
 <use pictures/mould.pdf>
@@ -963,48 +541,40 @@ Overfull \hbox (1.80464pt too wide) in paragraph at lines 32--32
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<pictures/pose.pdf, id=343, 578.66188pt x 422.65503pt>
+<pictures/pose.pdf, id=35, 578.66188pt x 422.65503pt>
 File: pictures/pose.pdf Graphic file (type pdf)
  <use pictures/pose.pdf>
 Package pdftex.def Info: pictures/pose.pdf used on input line 48.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
-<pictures/style.pdf, id=344, 578.66188pt x 422.65503pt>
+<pictures/style.pdf, id=36, 578.66188pt x 422.65503pt>
 File: pictures/style.pdf Graphic file (type pdf)
 
 <use pictures/style.pdf>
 Package pdftex.def Info: pictures/style.pdf used on input line 51.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
-<pictures/place.pdf, id=345, 578.66188pt x 422.65503pt>
+<pictures/place.pdf, id=37, 578.66188pt x 422.65503pt>
 File: pictures/place.pdf Graphic file (type pdf)
 
 <use pictures/place.pdf>
 Package pdftex.def Info: pictures/place.pdf used on input line 54.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
- [8 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/map1.png> <D:/
-just do IT/projects/deep-learning-matlab/poster/pictures/map3.png> <D:/just do 
-IT/projects/deep-learning-matlab/poster/pictures/map4.png> <D:/just do IT/proje
-cts/deep-learning-matlab/poster/pictures/fig3-1.pdf> <D:/just do IT/projects/de
-ep-learning-matlab/poster/pictures/fig3-2.pdf> <D:/just do IT/projects/deep-lea
-rning-matlab/poster/pictures/fig3-3.pdf> <D:/just do IT/projects/deep-learning-
-matlab/poster/pictures/fig3-4.pdf> <D:/just do IT/projects/deep-learning-matlab
-/poster/pictures/fig3-5.pdf> <D:/just do IT/projects/deep-learning-matlab/poste
-r/pictures/fig3-6.pdf>]
-<pictures/direction_err.pdf, id=363, 578.16pt x 422.48741pt>
+
+<pictures/direction_err.pdf, id=38, 578.16pt x 422.48741pt>
 File: pictures/direction_err.pdf Graphic file (type pdf)
 
 <use pictures/direction_err.pdf>
 Package pdftex.def Info: pictures/direction_err.pdf used on input line 69.
 (pdftex.def)             Requested size: 212.47287pt x 155.26064pt.
-
+ [2 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/apf1.pdf> <D:/
+just do IT/projects/deep-learning-matlab/poster/pictures/apf2.pdf> <D:/just do 
+IT/projects/deep-learning-matlab/poster/pictures/apf3.pdf> <D:/just do IT/proje
+cts/deep-learning-matlab/poster/pictures/mould.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/time_pose.pdf, id=364, 569.83128pt x 433.78761pt>
+<pictures/time_pose.pdf, id=197, 569.83128pt x 433.78761pt>
 File: pictures/time_pose.pdf Graphic file (type pdf)
 
 <use pictures/time_pose.pdf>
@@ -1014,33 +584,40 @@ Package pdftex.def Info: pictures/time_pose.pdf used on input line 75.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/pose.pdf> <D:/j
-ust do IT/projects/deep-learning-matlab/poster/pictures/style.pdf> <D:/just do 
-IT/projects/deep-learning-matlab/poster/pictures/place.pdf> <D:/just do IT/proj
-ects/deep-learning-matlab/poster/pictures/mould.pdf> <D:/just do IT/projects/de
-ep-learning-matlab/poster/pictures/direction_err.pdf>]
-<pictures/err_pose.pdf, id=402, 578.66188pt x 422.65503pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 5316) has occurred while \output is active []
+
+ [3 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/map1.png> <D:/
+just do IT/projects/deep-learning-matlab/poster/pictures/map3.png> <D:/just do 
+IT/projects/deep-learning-matlab/poster/pictures/map4.png> <D:/just do IT/proje
+cts/deep-learning-matlab/poster/pictures/pose.pdf> <D:/just do IT/projects/deep
+-learning-matlab/poster/pictures/style.pdf> <D:/just do IT/projects/deep-learni
+ng-matlab/poster/pictures/place.pdf>]
+<pictures/err_pose.pdf, id=218, 578.66188pt x 422.65503pt>
 File: pictures/err_pose.pdf Graphic file (type pdf)
 
 <use pictures/err_pose.pdf>
 Package pdftex.def Info: pictures/err_pose.pdf used on input line 165.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
-<pictures/err_style.pdf, id=403, 578.66188pt x 422.65503pt>
+<pictures/err_style.pdf, id=219, 578.66188pt x 422.65503pt>
 File: pictures/err_style.pdf Graphic file (type pdf)
 
 <use pictures/err_style.pdf>
 Package pdftex.def Info: pictures/err_style.pdf used on input line 168.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
-<pictures/err_place.pdf, id=404, 578.66188pt x 422.65503pt>
+<pictures/err_place.pdf, id=220, 578.66188pt x 422.65503pt>
 File: pictures/err_place.pdf Graphic file (type pdf)
 
 <use pictures/err_place.pdf>
 Package pdftex.def Info: pictures/err_place.pdf used on input line 171.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
-<pictures/particle_number.pdf, id=405, 578.66188pt x 422.65503pt>
+<pictures/particle_number.pdf, id=221, 578.66188pt x 422.65503pt>
 File: pictures/particle_number.pdf Graphic file (type pdf)
 
 <use pictures/particle_number.pdf>
@@ -1051,47 +628,62 @@ Overfull \hbox (1.80464pt too wide) in paragraph at lines 186--186
  [][] 
  []
 
-) ("D:\just do IT\projects\deep-learning-matlab\poster\background.tex" [10 <D:/
-just do IT/projects/deep-learning-matlab/poster/pictures/time_pose.pdf> <D:/jus
-t do IT/projects/deep-learning-matlab/poster/pictures/particle_number.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) ("D:\just do IT\projects\deep-learning-matlab\poster\background.tex" [4 <D:/j
+ust do IT/projects/deep-learning-matlab/poster/pictures/direction_err.pdf> <D:/
+just do IT/projects/deep-learning-matlab/poster/pictures/time_pose.pdf>]
 Underfull \hbox (badness 1533) in paragraph at lines 15--16
 []\OT1/ptm/m/n/10 The ear-ly work on robot lo-cal-iza-tion prob-lem used
  []
 
+[5 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_pose.pdf> <
+D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_style.pdf> <D:/
+just do IT/projects/deep-learning-matlab/poster/pictures/err_place.pdf> <D:/jus
+t do IT/projects/deep-learning-matlab/poster/pictures/particle_number.pdf>]
 Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no ¯ in font ptmr7t!
-) ("D:\just do IT\projects\deep-learning-matlab\poster\discussion.tex" [11 <D:/
-just do IT/projects/deep-learning-matlab/poster/pictures/err_pose.pdf> <D:/just
- do IT/projects/deep-learning-matlab/poster/pictures/err_style.pdf> <D:/just do
- IT/projects/deep-learning-matlab/poster/pictures/err_place.pdf>])
-("D:\just do IT\projects\deep-learning-matlab\poster\conclusion.tex")
-("D:\just do IT\projects\deep-learning-matlab\poster\sensys.bbl" [12]) [13]
+)
+("D:\just do IT\projects\deep-learning-matlab\poster\discussion.tex"
+
+LaTeX Warning: Reference `subsec:APF_effect' on page 6 undefined on input line 
+3.
+
+) ("D:\just do IT\projects\deep-learning-matlab\poster\conclusion.tex")
+("D:\just do IT\projects\deep-learning-matlab\poster\sensys.bbl"
+
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [7]
 ("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux")
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4267 strings out of 495354
- 56777 string characters out of 3183859
- 147006 words of memory out of 3000000
- 7246 multiletter control sequences out of 15000+200000
- 53355 words of font info for 107 fonts, out of 3000000 for 9000
+ 4046 strings out of 495354
+ 52205 string characters out of 3183859
+ 132337 words of memory out of 3000000
+ 7078 multiletter control sequences out of 15000+200000
+ 46989 words of font info for 96 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,10n,24p,1540b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,10n,24p,1317b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<E:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextr
-a/cmex9.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/CTEX/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/CTEX/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-<E:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/CTEX/MiKTeX/fonts/type1
-/urw/symbol/usyr.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><E:/CTEX/
-MiKTeX/fonts/type1/urw/times/utmr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/u
-tmr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><E:/CTEX/MiKTeX/fon
-ts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on sensys.pdf (13 pages, 4388929 bytes).
+ublic/amsfonts/cm/cmmi10.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/CTEX/MiKTe
+X/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/helvetic/
+uhvr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><E:/CTEX/MiKTeX/font
+s/type1/urw/times/utmb8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
+E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on sensys.pdf (7 pages, 1160613 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
+ 299 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

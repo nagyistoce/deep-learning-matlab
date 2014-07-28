@@ -1,47 +1,11 @@
 \begin{thebibliography}{10}
 
-\bibitem{car_finder}
-{Car Finder AR}.
-\newblock https://play.google.com/store/apps/details? id=net.androoid.carxare.
-
-\bibitem{carlocator}
-{Car Locator}.
-\newblock https://play.google.com/store/apps/details?
-  id=com.edwardkim.android.carlocatorfull.
-
-\bibitem{car_smart}
-{Find my car smarter}.
-\newblock
-  https://itunes.apple.com/cn/app/find-my-car-smarter-pro/id480619632?mt=8.
-
-\bibitem{icarpark}
-{iCarPark}.
-\newblock https://itunes.apple.com/us/app/icarpark/id305690042?mt=8.
-
-\bibitem{my_car_parking}
-{My car parking}.
-\newblock https://play.google.com/store/apps/details? id=com.logictree.park.
-
-\bibitem{mesh_network}
-{Parking sensors mesh network}.
-\newblock
-  http://www.streetline.com/parking-analytics/parking-sensors-mesh-network/.
-
-\bibitem{sfpark}
-{SFpark}.
-\newblock http://sfpark.org/how-it-works/the-sensors/.
-
 \bibitem{Choudhury:SurroundSense}
 M.~Azizyan, I.~Constandache, and R.~Roy~Choudhury.
 \newblock Surroundsense: Mobile phone localization via ambience fingerprinting.
 \newblock In {\em Proceedings of the 15th Annual International Conference on
   Mobile Computing and Networking}, MobiCom '09, pages 261--272, New York, NY,
   USA, 2009. ACM.
-
-\bibitem{bahl00radar}
-P.~Bahl and V.~N. Padmanabhan.
-\newblock {RADAR}: An in-building {RF}-based user location and tracking system.
-\newblock In {\em IEEE INFOCOM}, 2000.
 
 \bibitem{signal_profile}
 G.~Chandrasekaran, T.~Vu, A.~Varshavsky, M.~Gruteser, R.~Martin, J.~Yang, and
@@ -149,12 +113,6 @@ S.~P. Tarzia, P.~A. Dinda, R.~P. Dick, and G.~Memik.
   Systems, Applications, and Services}, MobiSys '11, pages 155--168, New York,
   NY, USA, 2011. ACM.
 
-\bibitem{Thiagarajan:2010}
-A.~Thiagarajan, J.~Biagioni, T.~Gerlich, and J.~Eriksson.
-\newblock Cooperative transit tracking using smart-phones.
-\newblock In {\em Proceedings of the 8th ACM Conference on Embedded Networked
-  Sensor Systems}, SenSys '10, pages 85--98, New York, NY, USA, 2010. ACM.
-
 \bibitem{VTrack}
 A.~Thiagarajan, L.~Ravindranath, K.~LaCurts, S.~Madden, H.~Balakrishnan,
   S.~Toledo, and J.~Eriksson.
@@ -216,10 +174,5 @@ C.-W. You, N.~D. Lane, F.~Chen, R.~Wang, Z.~Chen, T.~J. Bao, M.~Montes-de Oca,
 \newblock In {\em Proceeding of the 11th Annual International Conference on
   Mobile Systems, Applications, and Services}, MobiSys '13, pages 461--462, New
   York, NY, USA, 2013. ACM.
-
-\bibitem{youssef2005horus}
-M.~Youssef and A.~Agrawala.
-\newblock The horus wlan location determination system.
-\newblock In {\em ACM MobiSys}, 2005.
 
 \end{thebibliography}

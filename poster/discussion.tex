@@ -1,0 +1,23 @@
+\section{Discussion}\label{sec:discussion}
+
+\textbf{The start of the trace}. It is possible that the car is not stationary when the VeLoc application starts, or that it does not start exactly at the entrance of the parking lot. In these cases, VeLoc can employ two heuristics to determine what time should be considered the start of the trace by examining when: (1) the smartphone loses its GPS signal, which is usually the time it enters a parking structure such as an underground lot; and (2) the first (or certain) landmark is detected, which can be used to back trace the time when the car enters the structure (as illustrated in Section~\ref{subsec:APF_effect}).
+
+
+\textbf{Complex parking structures}. There are many other types of complex parking structures such as a multi-storey parking lot with up/down-slope parking spaces. VeLoc can support vehicle tracking in these complex parking structures: (1) the turn and slope detection algorithms can jointly determine which storey the vehicle is located; (2) the pose estimation module can tell whether the vehicle is parking on the slope and calibrate the coordinate systems accordingly.
+
+
+\textbf{Other extreme cases}. The smartphone may keep jittering when the vehicle is on a jerky road, or the driver puts the phone in his pocket. These extreme cases require VeLoc to estimate the phone pose in real time. To address this problem, VeLoc employs a sliding time window technique, which shows that it can track the pose quite accurately in just one second (Figure~\ref{pix:time_pose}). This avoids large errors that may arise due to the latency in pose estimation.
+
+% , since it is difficult to estimate vehicle's direct through smartphone sensors, and we use
+
+
+
+
+%\textbf{Real-time performance}. Recently we use Matlab on PC to process the raw data and compute vehicle location, typically a 4-minute vehicle trajectory could be processed in 25 seconds, with vehicle location at each time stamp as output. Though we haven't build the realtime system offline on smartphones, we believe the localization result could be provided in about 5 seconds.
+
+%\textbf{Special cases: gravity not in the yz-plane.}
+
+%\textbf{Different types of vehicles.}
+
+
+%\textbf{Parking on the slope.}

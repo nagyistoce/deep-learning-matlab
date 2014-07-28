@@ -1,0 +1,89 @@
+%
+% sample.tex
+% $Id: sample.tex,v 1.1 2006/03/18 00:21:36 johnh Exp johnh $
+%
+% File is renamed to sensys-full.tex to reflect the twists made to use sensys-proc.cls.
+%
+
+% The default of sigplan-proc-varsize is 9pt, indented paragraphs (acm style)
+% For Sensys or other 10pt conference, use the 10pt option
+%\documentclass{sigplan-proc-varsize}
+% options:
+%\documentclass[9pt]{sigplan-proc-varsize}
+%\documentclass[nocopyrightspace,10pt]{sigplan-proc-varsize-sensys-abstract}
+
+%\documentclass[10pt]{sensys-proc}
+\documentclass[10pt,abstract]{sensys-proc}
+
+% % hack to avoid the ugly ACM paragraph definition
+% % => can't leave blank line after this
+% (remove comment for this hack)
+% \renewcommand{\paragraph}[1]{\vskip 6pt\noindent\textbf{#1 }}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{slashbox}
+\usepackage{curves}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{balance}
+\usepackage{soul}
+\graphicspath{{pictures/}}
+\usepackage{balance}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\usepackage[pass,letterpaper]{geometry}
+
+\author{
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+%% e-mail address with \email.
+Mingmin Zhao, Ruipeng Gao, Jiaxu Zhu, Tao Ye, Fan Ye, Yizhou Wang, Kaigui Bian, Ming Zhang \\
+\affaddr{Department of Electrical Engineering and Computer Science}\\
+\affaddr{Peking University, Beijing, China}\\
+\email{\{zhaomingmin, gaoruipeng, zhujiaxu, yetao, yefan, Yizhou.Wang, bkg, mzhang\}@pku.edu.cn}
+}
+
+\title{Poster Abstract: VeLoc: Finding Your Car in the Parking Lot}
+
+\crdata{978-1-4503-1169-4}
+\conferenceinfo{SenSys'14,} {November 3--6, 2014, Memphis, TN, USA.}
+\CopyrightYear{2014}
+
+\renewcommand{\baselinestretch}{1.08}
+\begin{document}
+
+\maketitle
+
+\input{abstract}
+
+\category{H.5.2}{Information Interfaces and Presentation}{User Interfaces}
+\category{H.1.2}{Models and Principles}{User/Machine Systems}[Human Information Processing]
+\category{I.5.1}{Pattern\break Recognition}{Models}[Neural Nets]
+
+\terms{Human Factors}
+
+\keywords{Vehicle Localization, Indoor Localization, Inertial Tracking, Robotic Navigation, Virtual Landmarks}
+
+\input{introduction}
+\input{overview}
+\input{pose}
+\input{landmark}
+\input{rt_tracking}
+\input{evaluation}
+\input{background}
+\input{discussion}
+\input{conclusion}
+
+\balance
+\bibliographystyle{abbrv}
+\bibliography{bib/sigproc}  % sigproc.bib is the name of the Bibliography in this case
+\end{document}

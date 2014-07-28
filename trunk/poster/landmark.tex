@@ -1,0 +1,206 @@
+\section{Landmark Detection}\label{sec:landmark}
+
+%Special road conditions, which we call landmarks, cause particular pattern in inertial sensor data.
+Landmarks along a road in certain environments are highly likely to cause distinguishable patterns in the observed inertial sensor data when a vehicle passes over them. Typical landmarks in a parking structure include bumps, turns, and slopes. In this section, we present three robust algorithms for detecting these three types of landmarks using inertial sensor data.
+
+\subsection{Bump Detection}
+Bumps are used to limit the vehicle speed inside parking lots for the sake of safety. When a vehicle pass over a bump, it causes a jolting that generates a detectable pattern in the inertial sensor data. Note that other landmarks such as drainage outlets or joint part of fire shutters, may also cause similar jolting patterns as bumps and thus are categorized as bumps as well in this paper.
+
+\textbf{Acceleration-based detection}. When a vehicle passes over a bump, jitters occur in the signals of both accelerometer and gyroscope sensors of a smartphone inside the vehicle. Acceleration along the z-axis (the vertical direction) can best characterize such jitters.
+%Moreover, gyroscope signals along x- or y-axis are also helpful for detecting the road anomaly as these signals are always near-zero unless there is some road anomaly that causes vibrations.
+
+Some previous work \cite{Eriksson:The_Pothole_Patrol} calculate the standard deviation of the z-axis acceleration, and use a pre-determined threshold to detect bump-passing. Figure~\ref{fig_bump}(a) shows the acceleration on the z-axis for a car driving over four bumps along a straight road, and the standard deviation is shown in Figure~\ref{fig_bump}(b). The first jitter at the 4th~second is from a sudden change of the phone's pose, which is less significant than other four caused by the bumps.
+
+However, due to the variation of parking lots structures, vehicle models and driving styles, it is difficult to find a universal threshold that fits all cases. Moreover, occasional phone pose changes during driving may also cause false alarm (e.g, the one at the 4th~second in Figure \ref{fig_bump}~(b)).
+
+% (a)
+% 把四个peak 用红色圈 标出来
+% 把最后一个 peak 的 两个 jitters 用箭头指出来，一个 front wheel，一个 rear wheel
+
+
+% (b) 在图中，对第四个 vibration 标出什么是 inter-jitter period
+
+\begin{figure}[t]
+      \centering
+      \vspace{-2pt}
+        \subfigure[Acceleration along the z-axis with four jitters.] {
+        \includegraphics[scale=0.4]{detect_1}\label{detect_1}
+        }
+        \subfigure[Standard deviation with four high peaks] {
+        \includegraphics[scale=0.4]{detect_2}\label{detect_2}
+        }
+        \subfigure[Convoluted standard deviation with four distinguishable peaks] {
+        \includegraphics[scale=0.4]{detect_3}\label{detect_3}
+        }
+        \caption{Bump detections: (a) four jitters (circled ones in the figure) in the acceleration on the z-axis; (b) four high peaks in the standard deviation of the z-axis acceleration; (c) four distinguishable peaks after applying convolution to the standard deviation with a Gaussian filter, where green (or red) markers indicate the local maximums for detected bumps (or false alarms).}\label{fig_bump}
+\end{figure}
+
+\textbf{Proposed bump detection algorithm}. We propose a robust bump detection algorithm that is less sensitive to the choice of the threshold and occasional pose changes of the phone.
+
+We observe that when driving straight, each bump can incur two consecutive car jolts when its front wheels pass over a bump followed by rear ones. Note that the first jolt usually is more significant than the second as the phone is often placed in the front of a car, and it is also because that the vehicle's speed usually has been reduced when the front wheels pass over the bump. Or a bump may cause four jitters at a turning corner because each of wheels' pass over the bump at different times. These consecutive jitters lead to two or four peaks in the standard deviation of the z-axis acceleration. We smooth the standard deviation curve by convolving it with a Gaussian filter. The two jitters caused by a bump in Figure~\ref{fig_bump}(b) is merged into a single distinguishable peak in Figure~\ref{fig_bump}(c). The time stamp of the peak is the time when the center of the vehicle is passing over the bump. After the convolution, it is much easier to distinguish jolts caused by bumps from those incurred by sudden phone pose changes, because the latter does not have subsequent followers.
+
+%, and the gap between the peaks is very short (namely ``jitter gap'') The middle time point of such consecutive jitters and inter-jitter periods is a good estimate of the time point when the center of a vehicle crosses the bump. Instead of observing the magnitude of jitters or vibrations, we use the estimated time point when the center of a vehicle crosses the bump as a central decision statistic.
+% exact time at which the center of the vehicle have the same 2D coordinates with the bump.
+
+%To estimate the middle of consecutive inter-jitter periods,
+
+% bump is a longer process then vibrating caused by sudden pose change. A threshold is used to decide whether those candidates are real bumps.
+
+
+%We define $E(s,t)$, the \emph{Energy} of a signal $s(t)$ at time $t$ as standard deviation of $s(t)$ in the time window [$t-\delta t$,$t+\delta t$]
+%where $\delta t$ is the window size. The feature used for road anomaly detection is defined as follows:
+%\begin{equation} F_1(t):=E(acc_z,t)+\frac{E(gyr_x,t)}{b}+\frac{E(gyr_y,t)}{b}\end{equation}
+%$b$ is used to balance the difference in scale between two kinds of data. In VeLoc, we set $b=(0.1)^2=0.01$.\\
+
+
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{raw_data}\\
+%  \caption{sdf}
+%\end{figure}
+
+
+%There are some existing approaches based on the acceleration on z-axis to detect bumps on the road\cite{}.
+%One idea is to calculate standard deviation(shown in Figure X) and use a threshold to detect the bumps.
+%However, different parking lots, different vehicles and different driving style make it hard to find a threshold suitable for all cases.
+%Standard deviation for three driving cases by the same driver in three different parking lots depicted in Figure X shows the difficulty of threshold selection.
+%Additionally, occasional pose change during the driving also lead to high deviation in acceleration on z-axis.
+%For instance, during the drive shown in Figure X, the sudden start at around 5s change the pose of phone, thus, standard deviation is relatively high to be confused with bumps.
+%We propose a bump detection algorithm unaffected by threshold and robust to occasional pose change.
+%The intuition is that there are two jittering corresponding to the front pair of tires and rear pair of tires when a vehicle come across to a bump.
+
+\subsection{Turn and Slope detection}
+Both turns and slopes can be detected by gyroscope signals when rotational velocities are measured: horizontal turns result in rotational velocity along the z-axis as shown in Figure \ref{fig_turn_slope}(a)(b), and slopes lead to rotational velocity along the x-axis as shown in Figure \ref{fig_turn_slope}(c)(d).
+Based on this observation, VeLoc calculates the accumulated rotation angle as the detection statistic,
+\begin{equation}
+C(t;{\bf s},k) = | \sum_{\tau=t-k}^t{{\bf s}(\tau)} |,
+\end{equation}
+where ${\bf s}(\tau)$ is the gyroscope reading at time $\tau$ of an axis, and $k$ defines the size of the data collection window. The magnitude of $C$ depends on the angle that the vehicle turns.
+\begin{itemize}
+  \item \textbf{A turn} is detected at time $t$ if and only if
+\begin{equation} C(t;{\bf s}_z,k)> \frac{\pi}{6} \end{equation}
+where ${\bf s}_z$ is the gyroscope signal along the z-axis.
+  \item \textbf{A slope} is detected at time $t$ if and only if
+\begin{equation} C(t;{\bf s}_x,k)> \frac{\pi}{18}, \end{equation}
+where ${\bf s}_x$ is the gyroscope signal along the x-axis. Both the thresholds are chosen empirically.
+\end{itemize}
+
+
+\begin{figure}[t]
+      \centering
+      \vspace{-2pt}
+        \subfigure[Left turn] {
+        \includegraphics[width=1.55in]{left_turn}\label{left_turn}
+        }
+        \subfigure[Right turn] {
+        \includegraphics[width=1.55in]{right_turn}\label{right_turn}
+        }
+        \subfigure[Up slope] {
+        \includegraphics[width=1.55in]{up_turn}\label{up_turn}
+        }
+        \subfigure[Down slope ] {
+        \includegraphics[width=1.55in]{down_turn}\label{down_turn}
+        }
+        \vspace{4pt}
+        \caption{Inertial sensing data used for turn and slope detection. (a)(b) show turns using gyroscope signal along the z-axis. (c)(d) show slopes using gyroscope signal along the x-axis.}
+        \label{fig_turn_slope}
+\end{figure}
+
+%During the example drive, feature $F_3$ calculated for turning detection is shown in Figure \ref{fig_features}(c) while feature $F_4$ calculated for slope detection is shown in Figure \ref{fig_features}(d).
+%Note there are four responses corresponding to four turnings shown in the Figure \ref{fig_route}. The vehicle turns around key points C(22s), D(33s), E(40s), F(44s). Since there is no slope, feature $F_4$ always has a very small response.
+
+%The magnitude of the response depends on the degree of the angle that the vehicle turns. For instance, the vehicle do not take a full 90-degree turn at the two consecutive turnings at E, F which correspond to two lower peaks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\iffalse
+The intuition behind our algorithm is that both anomalous road conditions and whether the vehicle is moving are reflected in features of the acceleration data. For the sake of clarity, we will illustrate this part with an example scenario. Figure \ref{fig_route} shows the map of an underground parking lot with route drawn on it. 7 key points, i.e. A to G, are demonstrated with time stamps. Figure \ref{fig_raw} shows the sensor data while the vehicle is moving along the route.
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[scale=0.35]{route.png}
+%\caption{Map of the example scenario shown with route. 7 key points are demonstrated with time stamps. The vehicle starts at A and stopped at G. The timer starts before the vehicle starts and it's time is recorded at every key point.}\label{fig_route}
+%\end{figure}
+
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[scale=.7]{raw}
+%\caption{Sensor data recorded during the example drive.}\label{fig_raw}
+%\end{figure}
+
+We will discuss the features used in different tasks first and then use a machine learning method to optimize all the parameters in our model.
+
+%\begin{figure}[hbp]
+%\centering
+%\includegraphics[scale=.7]{features}
+%\caption{Features calculated for different detectors.}\label{fig_features}
+%\end{figure}
+
+\iffalse
+\subsubsection{Moving Detection}
+We can distinguish immobile from moving with constant speed, in principle, if the floor is absolutely flat. However, in practice, the floor of the parking lot cannot be that flat at all which cause vibration on sensor data while the vehicle is moving. Based on this intuition, VeLoc calculate the following feature of a signal $s(t)$:
+\begin{equation} E(s,t) = \int_{t-\delta}^t{s(x)^2}dx \end{equation}
+and discrete version with standardization:
+\begin{equation} E(s,t) = \sum_{i=t-k+1}^t{s(i)^2} - \frac{1}{k}\{\sum_{i=t-k+1}^t{s(i)}\}^2 \end{equation}
+where both $\delta$ and $k$ describe the window size.In our implementation, $k=100$ corresponding to $\delta=2s$ since sensor data is collected every $0.02s$ in VeLoc.\\
+
+Feature used in moving detection is defined as:
+\begin{equation} F_1(t):=w_{11}E(acc_x,t)+w_{12}E(acc_y,t)\\+w_{13}E(acc_z,t)\end{equation}
+where $w_{11},w_{12},w_{13}$ are weights summing up to 1.\\
+
+Vehicle is regarded as immobile at time $t$ if and only if the following inequality is satisfied:
+\begin{equation} F_1(t)<thres_1 \end{equation}
+where $thres_1$ is a threshold.\\
+
+During the example drive, feature $F_1$ calculated for moving detection is shown in Figure \ref{fig_features}(a). Note that only two key points, A(4s) and G(48s), show relatively small value.
+\fi
+
+\subsubsection{Road Anomaly Detection}
+When a vehicle comes to speed bumps, potholes or other rough road conditions, there are high-energy events in both acceleration signals and gyroscope signals. Acceleration along z-axis best characterizes this anomaly since vibrating up and down changes acceleration along this direction. Gyroscope signals along x-axis and y-axis can also be used to detect road anomaly because those signals are always close to zero unless there is vibration cause by road anomaly.\\
+
+We use the definition of feature E in section 4.1.1 to define feature for road anomaly detection as follows:
+\begin{equation} F_2(t):=w_{21}E(acc_z,t)+w_{22}\frac{E(gyr_x,t)}{b}+w_{23}\frac{E(gyr_y,t)}{b}\end{equation}
+where $w_{11},w_{12},w_{13}$ are weights summing up to 1.
+$b$ is used to balance the difference in scale between two kinds of data. In VeLoc, we set $b=(0.1)^2=0.01$.\\
+
+Road Anomaly is detected at time $t$ if and only if the following inequality is satisfied:
+\begin{equation} F_2(t)>thres_2 \end{equation}
+where $thres_2$ is a threshold.\\
+
+During the example drive, feature $F_2$ calculated for road anomaly detection is shown in Figure \ref{fig_features}(b).
+Note there are two responses corresponding to two speed bumps shown in the Figure 3 and the activities happen after key points B(12s) and C(22s).\\
+
+The magnitude of the response also depends on the velocity of the vehicle. At high speeds, even small road anomalies can create high peak acceleration reading. This can be used to explain why the second speed bump cause a lower peak in $F_2$ feature since the vehicle turns before and velocity is relatively small.
+
+\subsubsection{Turning Detection and Slope Detection}
+Both turnings and slopes\footnote{There is no slope in the parking lot at PKU, future experiment may need a bigger parking lot.} can be detected by gyroscope signals since rotational velocities are measured. Turnings result in rotational velocity along z-axis while slopes result in rotational velocity along x-axis. Based on this intuition, VeLoc calculate the following feature of a signal $s(t)$:
+\begin{equation} C(s,t) = |\int_{t-\delta}^t{s(x)}dx| \end{equation}
+with discrete version:
+\begin{equation} C(s,t) = |\sum_{i=t-k+1}^t{s(i)}| \end{equation}
+where both $\delta$ and $k$ describe the window size.In our implementation, $k=150$ corresponding to $\delta=3s$ since it may take longer time to travel through a turning.\\
+
+A turning is detected at time $t$ if and only if the following inequality is satisfied:
+\begin{equation} F_3(t):=C(gyro_z,t)>thres_3 \end{equation}
+where $thres_1$ is a threshold.\\
+
+A slope is detected at time $t$ if and only if the following inequality is satisfied:
+\begin{equation} F_4(t):=C(gyro_x,t)>thres_4 \end{equation}
+where $thres_1$ is a threshold.\\
+
+During the example drive, feature $F_3$ calculated for turning detection is shown in Figure \ref{fig_features}(c) while feature $F_4$ calculated for slope detection is shown in Figure \ref{fig_features}(d).
+Note there are four responses corresponding to four turnings shown in the Figure \ref{fig_route}. The vehicle turns around key points C(22s), D(33s), E(40s), F(44s). Since there is no slope, feature $F_4$ always has a very small response.\\
+
+The magnitude of the response depends on the degree of the angle that the vehicle turns. For instance, the vehicle do not take a full 90-degree turn at the two consecutive turnings at E, F which correspond to two lower peaks.
+
+\fi

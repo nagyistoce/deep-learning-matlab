@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.19)  28 JUL 2014 19:49
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.19)  28 JUL 2014 19:58
 entering extended mode
 **D:/just*do*IT/projects/deep-learning-matlab/poster/sensys.tex
 ("D:/just do IT/projects/deep-learning-matlab/poster/sensys.tex"
@@ -461,6 +461,17 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 )
+Underfull \hbox (badness 4819) in paragraph at lines 69--72
+[]\OT1/ptm/m/n/10 C.3 [\OT1/ptm/b/n/10 Special-purpose and Application-based Sy
+s-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+\OT1/ptm/b/n/10 Sys-tem-s\OT1/ptm/m/n/10 ]: Hu-man in-for-ma-tion pro-cess-ing;
+ H.4.m
+ []
+
 ("D:\just do IT\projects\deep-learning-matlab\poster\introduction.tex"
 <pictures/overview.pdf, id=1, 829.872pt x 345.70154pt>
 File: pictures/overview.pdf Graphic file (type pdf)
@@ -475,7 +486,10 @@ Overfull \hbox (11.9246pt too wide) in paragraph at lines 47--47
 
 Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no ¯ in font ptmr7t!
-[1{E:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [1{E:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
  <D:/just do IT/projects/deep-learning-matlab/poster/pictures/overview.pdf>]
@@ -534,38 +548,38 @@ Package pdftex.def Info: pictures/map4.png used on input line 17.
 File: pictures/mould.pdf Graphic file (type pdf)
 
 <use pictures/mould.pdf>
-Package pdftex.def Info: pictures/mould.pdf used on input line 32.
+Package pdftex.def Info: pictures/mould.pdf used on input line 35.
 (pdftex.def)             Requested size: 242.82503pt x 184.11697pt.
 
-Overfull \hbox (1.80464pt too wide) in paragraph at lines 32--32
+Overfull \hbox (1.80464pt too wide) in paragraph at lines 35--35
  [][] 
  []
 
 <pictures/pose.pdf, id=35, 578.66188pt x 422.65503pt>
 File: pictures/pose.pdf Graphic file (type pdf)
  <use pictures/pose.pdf>
-Package pdftex.def Info: pictures/pose.pdf used on input line 48.
+Package pdftex.def Info: pictures/pose.pdf used on input line 51.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
 <pictures/style.pdf, id=36, 578.66188pt x 422.65503pt>
 File: pictures/style.pdf Graphic file (type pdf)
 
 <use pictures/style.pdf>
-Package pdftex.def Info: pictures/style.pdf used on input line 51.
+Package pdftex.def Info: pictures/style.pdf used on input line 54.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
 <pictures/place.pdf, id=37, 578.66188pt x 422.65503pt>
 File: pictures/place.pdf Graphic file (type pdf)
 
 <use pictures/place.pdf>
-Package pdftex.def Info: pictures/place.pdf used on input line 54.
+Package pdftex.def Info: pictures/place.pdf used on input line 57.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
 <pictures/direction_err.pdf, id=38, 578.16pt x 422.48741pt>
 File: pictures/direction_err.pdf Graphic file (type pdf)
 
 <use pictures/direction_err.pdf>
-Package pdftex.def Info: pictures/direction_err.pdf used on input line 69.
+Package pdftex.def Info: pictures/direction_err.pdf used on input line 72.
 (pdftex.def)             Requested size: 212.47287pt x 155.26064pt.
  [2 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/apf1.pdf> <D:/
 just do IT/projects/deep-learning-matlab/poster/pictures/apf2.pdf> <D:/just do 
@@ -574,21 +588,18 @@ cts/deep-learning-matlab/poster/pictures/mould.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/time_pose.pdf, id=197, 569.83128pt x 433.78761pt>
+<pictures/time_pose.pdf, id=199, 569.83128pt x 433.78761pt>
 File: pictures/time_pose.pdf Graphic file (type pdf)
 
 <use pictures/time_pose.pdf>
-Package pdftex.def Info: pictures/time_pose.pdf used on input line 75.
+Package pdftex.def Info: pictures/time_pose.pdf used on input line 78.
 (pdftex.def)             Requested size: 212.47287pt x 161.74329pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 5316) has occurred while \output is active []
+Underfull \vbox (badness 5519) has occurred while \output is active []
 
  [3 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/map1.png> <D:/
 just do IT/projects/deep-learning-matlab/poster/pictures/map3.png> <D:/just do 
@@ -600,31 +611,31 @@ ng-matlab/poster/pictures/place.pdf>]
 File: pictures/err_pose.pdf Graphic file (type pdf)
 
 <use pictures/err_pose.pdf>
-Package pdftex.def Info: pictures/err_pose.pdf used on input line 165.
+Package pdftex.def Info: pictures/err_pose.pdf used on input line 168.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
 <pictures/err_style.pdf, id=219, 578.66188pt x 422.65503pt>
 File: pictures/err_style.pdf Graphic file (type pdf)
 
 <use pictures/err_style.pdf>
-Package pdftex.def Info: pictures/err_style.pdf used on input line 168.
+Package pdftex.def Info: pictures/err_style.pdf used on input line 171.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
 <pictures/err_place.pdf, id=220, 578.66188pt x 422.65503pt>
 File: pictures/err_place.pdf Graphic file (type pdf)
 
 <use pictures/err_place.pdf>
-Package pdftex.def Info: pictures/err_place.pdf used on input line 171.
+Package pdftex.def Info: pictures/err_place.pdf used on input line 174.
 (pdftex.def)             Requested size: 158.99377pt x 116.12407pt.
 
 <pictures/particle_number.pdf, id=221, 578.66188pt x 422.65503pt>
 File: pictures/particle_number.pdf Graphic file (type pdf)
 
 <use pictures/particle_number.pdf>
-Package pdftex.def Info: pictures/particle_number.pdf used on input line 186.
+Package pdftex.def Info: pictures/particle_number.pdf used on input line 189.
 (pdftex.def)             Requested size: 242.82503pt x 177.35912pt.
 
-Overfull \hbox (1.80464pt too wide) in paragraph at lines 186--186
+Overfull \hbox (1.80464pt too wide) in paragraph at lines 189--189
  [][] 
  []
 
@@ -638,13 +649,12 @@ Underfull \hbox (badness 1533) in paragraph at lines 15--16
 []\OT1/ptm/m/n/10 The ear-ly work on robot lo-cal-iza-tion prob-lem used
  []
 
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no ¯ in font ptmr7t!
 [5 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_pose.pdf> <
 D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_style.pdf> <D:/
 just do IT/projects/deep-learning-matlab/poster/pictures/err_place.pdf> <D:/jus
-t do IT/projects/deep-learning-matlab/poster/pictures/particle_number.pdf>]
-Missing character: There is no ¡ in font ptmr7t!
-Missing character: There is no ¯ in font ptmr7t!
-)
+t do IT/projects/deep-learning-matlab/poster/pictures/particle_number.pdf>])
 ("D:\just do IT\projects\deep-learning-matlab\poster\discussion.tex"
 
 LaTeX Warning: Reference `subsec:APF_effect' on page 6 undefined on input line 
@@ -659,8 +669,11 @@ Package balance Warning: You have called \balance in second column
 [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [7]
-("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux")
+)
+Overfull \vbox (0.93694pt too high) has occurred while \output is active []
+
+
+[7] ("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux")
 
 LaTeX Warning: There were undefined references.
 
@@ -668,7 +681,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4046 strings out of 495354
  52205 string characters out of 3183859
- 132337 words of memory out of 3000000
+ 129247 words of memory out of 3000000
  7078 multiletter control sequences out of 15000+200000
  46989 words of font info for 96 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -681,7 +694,7 @@ uhvr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><E:/CTEX/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
 E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on sensys.pdf (7 pages, 1160613 bytes).
+Output written on sensys.pdf (7 pages, 1160380 bytes).
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

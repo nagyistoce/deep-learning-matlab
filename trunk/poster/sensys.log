@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.19)  28 JUL 2014 19:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.19)  28 JUL 2014 20:21
 entering extended mode
 **D:/just*do*IT/projects/deep-learning-matlab/poster/sensys.tex
 ("D:/just do IT/projects/deep-learning-matlab/poster/sensys.tex"
@@ -461,15 +461,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 )
-Underfull \hbox (badness 4819) in paragraph at lines 69--72
-[]\OT1/ptm/m/n/10 C.3 [\OT1/ptm/b/n/10 Special-purpose and Application-based Sy
-s-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
-\OT1/ptm/b/n/10 Sys-tem-s\OT1/ptm/m/n/10 ]: Hu-man in-for-ma-tion pro-cess-ing;
- H.4.m
+Underfull \hbox (badness 2662) in paragraph at lines 70--71
+\OT1/ptm/b/n/10 s\OT1/ptm/m/n/10 ]: Mi-cro-pro-ces-sor/microcomputer ap-pli-ca-
+tion-s; H.4.m
  []
 
 ("D:\just do IT\projects\deep-learning-matlab\poster\introduction.tex"
@@ -486,10 +480,7 @@ Overfull \hbox (11.9246pt too wide) in paragraph at lines 47--47
 
 Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no ¯ in font ptmr7t!
-
-Underfull \vbox (badness 1320) has occurred while \output is active []
-
- [1{E:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+[1{E:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
  <D:/just do IT/projects/deep-learning-matlab/poster/pictures/overview.pdf>]
@@ -642,50 +633,38 @@ Overfull \hbox (1.80464pt too wide) in paragraph at lines 189--189
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) ("D:\just do IT\projects\deep-learning-matlab\poster\background.tex" [4 <D:/j
-ust do IT/projects/deep-learning-matlab/poster/pictures/direction_err.pdf> <D:/
-just do IT/projects/deep-learning-matlab/poster/pictures/time_pose.pdf>]
-Underfull \hbox (badness 1533) in paragraph at lines 15--16
-[]\OT1/ptm/m/n/10 The ear-ly work on robot lo-cal-iza-tion prob-lem used
- []
 
-Missing character: There is no ¡ in font ptmr7t!
-Missing character: There is no ¯ in font ptmr7t!
-[5 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_pose.pdf> <
-D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_style.pdf> <D:/
-just do IT/projects/deep-learning-matlab/poster/pictures/err_place.pdf> <D:/jus
-t do IT/projects/deep-learning-matlab/poster/pictures/particle_number.pdf>])
-("D:\just do IT\projects\deep-learning-matlab\poster\discussion.tex"
-
-LaTeX Warning: Reference `subsec:APF_effect' on page 6 undefined on input line 
-3.
+LaTeX Warning: Reference `pix:particle_number' on page 4 undefined on input lin
+e 194.
 
 ) ("D:\just do IT\projects\deep-learning-matlab\poster\conclusion.tex")
-("D:\just do IT\projects\deep-learning-matlab\poster\sensys.bbl"
+("D:\just do IT\projects\deep-learning-matlab\poster\sensys.bbl")
 
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[4 <D:/just do IT/projects/deep-learning-matlab/poster/pictures/direction_err.p
+df> <D:/just do IT/projects/deep-learning-matlab/poster/pictures/time_pose.pdf>
+] [5
 
-)
-Overfull \vbox (0.93694pt too high) has occurred while \output is active []
+ <D:/just do IT/projects/deep-learning-matlab/poster/pictures/err_pose.pdf> <D:
+/just do IT/projects/deep-learning-matlab/poster/pictures/err_style.pdf> <D:/ju
+st do IT/projects/deep-learning-matlab/poster/pictures/err_place.pdf>]
+[6
 
-
-[7] ("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux")
+] ("D:\just do IT\projects\deep-learning-matlab\poster\sensys.aux")
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4046 strings out of 495354
- 52205 string characters out of 3183859
- 129247 words of memory out of 3000000
- 7078 multiletter control sequences out of 15000+200000
+ 4015 strings out of 495354
+ 51457 string characters out of 3183859
+ 118141 words of memory out of 3000000
+ 7053 multiletter control sequences out of 15000+200000
  46989 words of font info for 96 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,10n,24p,1317b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,10n,24p,953b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<E:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 10.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/CTEX/MiKTe
@@ -694,9 +673,9 @@ uhvr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><E:/CTEX/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
 E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on sensys.pdf (7 pages, 1160380 bytes).
+Output written on sensys.pdf (6 pages, 1142557 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
+ 291 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

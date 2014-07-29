@@ -1,6 +1,6 @@
 \section{Introduction}
-Remembering where a vehicle was parked has proven a hassle in large parking structures. Existing RF signature based indoor localization technology is not applicable where such signals may not be available such as at underground parking lots.
-Instrumenting additional sensors may solve the problem but at the cost of significant overheads in time, money and human efforts. 
+Remembering where a vehicle was parked has proven a hassle in large parking structures. Existing RF signature based indoor localization technology\cite{bahl00radar} is not applicable where such signals may not be available such as at underground parking lots.
+Instrumenting additional sensors may solve the problem but at the cost of significant overheads in time, money and human efforts.
 
 \iffalse
 (Problem)
@@ -17,7 +17,7 @@ With the rapid growth of personal vehicles amount and growth of urban parking sp
 
 %(Effects)
 
-%In this paper, we propose 
+%In this paper, we propose
 VeLoc is a vehicle localization system that utilizes accelerometer and gyroscope sensors in the smartphone to provide accurate vehicle localization. It does not rely on GPS or RF signals, neither require any additional sensors to instrument the parking ground. %Instead, the driver simply runs the VeLoc application before entering a parking structure. VeLoc will track the vehicle movements, estimate its location, and record where the vehicle is finally parked.% This information is then used to direct the driver back to the parked spot when she/he returns.
 
 %The intuition behind VeLoc is that although a noisy trajectory does not, by itself, reveal a vehicle's location, using the constraints imposed by the parking structure¡¯s map and detected landmarks is able to help vehicle tracking(shown in Figure \ref{fig_poster}).
@@ -40,7 +40,7 @@ Also, identifying which types of landmarks can be reliably recognized despite di
 
 %(High-level description)
 As shown in Figure~\ref{pix:overview}, VeLoc contains three components to deal with the above challenges.
-A \textit{pose estimation} module estimates the pose of the smartphone inside the vehicle. A \textit{landmark detection} module finds unique patterns corresponding to different types of landmarks and classify them reliably. A \textit{location estimation} module determines the vehicle's final location from the map and detected landmarks. 
+A \textit{pose estimation} module estimates the pose of the smartphone inside the vehicle. A \textit{landmark detection} module finds unique patterns corresponding to different types of landmarks and classify them reliably. A \textit{location estimation} module determines the vehicle's final location from the map and detected landmarks.
 
 \begin{figure}[h]
   \centering
@@ -73,7 +73,7 @@ The rest of this paper is organized as follows: we give a brief design overview 
 
 
 The intuition behind VeLoc is that although a noisy trajectory does not, by itself, reveal a vehicle's location, using the constraints imposed by the parking structure¡¯s map and detected landmarks is able to help vehicle tracking(shown in Figure \ref{fig_poster}).
-%This is because (a) trajectories can be used for localization since only a few paths on the map could accommodate the trajectory. (b) once a landmark is detected, only a few positions marked with the same kind of landmark are possible. (c) using both map constraints and detected landmark could narrow down the uncertainty more quickly and trace a vehicle more accurately. 
+%This is because (a) trajectories can be used for localization since only a few paths on the map could accommodate the trajectory. (b) once a landmark is detected, only a few positions marked with the same kind of landmark are possible. (c) using both map constraints and detected landmark could narrow down the uncertainty more quickly and trace a vehicle more accurately.
 
 \begin{figure}[h]
       \centering
